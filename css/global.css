@@ -1,0 +1,20 @@
+/* Name: UE Red
+Hex: #BB000E
+
+	
+Name: Lust
+Hex: #E31C25
+
+	
+Name: Eerie Black
+Hex: #1C1C1C
+
+Font 
+ */
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
