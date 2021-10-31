@@ -1,20 +1,21 @@
-// Open menu 
 const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav_links");
+const nav = document.querySelector("nav");
 
 hamburger.addEventListener("click", mobileMenu);
 
 function mobileMenu() {
     hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
+    nav.classList.toggle("active");
 }
-//  Closing
 
-const navLink = document.querySelectorAll(".nav_links");
+console.log(mobileMenu)
+
+
+const navLink = document.querySelectorAll("nav");
 
 navLink.forEach(n => n.addEventListener("click", closeMenu));
 
 function closeMenu() {
     hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
+    nav.classList.remove("active");
 }

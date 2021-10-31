@@ -8,7 +8,8 @@ Hex: #E31C25
 	
 Name: Eerie Black
 Hex: #1C1C1C
-
+gray
+#E3E3E3
 Font 
  */
 
@@ -17,74 +18,24 @@ Font
 
 header {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 30px 10%;
-    background-color: #111111;
-}
-
-
-/* NAVBAR */
-
-li,
-a,
-button {
+    justify-content: space-between;
+    margin: 0px;
+    background-color: #1C1C1C;
+    height: 80px;
+    width: 100%;
     font-family: 'Roboto', sans-serif;
-    font-weight: 800;
-    font-size: 16px;
 }
 
-img.logo {
-    filter: invert();
-    cursor: pointer;
-    padding: 0px 20px;
-    height: 50px;
-    margin-right: auto;
+.logo {
+    display: flex;
+    flex-grow: 2;
+    margin-left: 25px;
 }
 
-.nav_links li {
-    display: inline-block;
-    margin-left: 20px;
-}
-
-.nav_links li a {
-    transition: all 0.3s ease 0s;
-    color: #801b22;
-    padding: 10px;
-    border-radius: 50px;
-}
-
-.nav_links li a:hover {
-    color: #1C1C1C;
-    background-color: #801b22;
-}
-
-button {
-    margin-left: 20px;
-    padding: 9px 25px;
-    background-color: #801b22;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
-
-button:hover {
-    background-color: #2e2e2e;
-}
-
-.cta {
-    color: #801b22;
-}
-
-.bar {
-    background-color: white;
-    width: 30px;
-    height: 5px;
-    margin: 10px;
-    cursor: pointer;
-    display: block;
-    border-radius: 20%;
+nav {
+    display: flex;
+    margin: auto;
+    flex-grow: 1;
 }
 
 .hamburger {
@@ -92,39 +43,143 @@ button:hover {
 }
 
 
-/* Responsive menu */
+/* NAVBAR */
 
-@media only screen and (max-width: 768px) {
-    header,
-    ul.nav_links li {
-        display: block;
-        padding: 0px;
-        margin: 0px;
-    }
-    ul.nav_links li {
-        margin: 10px;
-    }
-    header {}
-    nav {}
-    ul {
-        display: block;
-        text-align: right;
-        margin-top: 30px;
-    }
-    a {
-        margin: auto;
-    }
-    .btn {
-        display: block;
-        height: 50px;
-    }
-    .hamburger {
-        display: block;
-        position: absolute;
-        top: 0px;
-        right: 1rem;
-    }
+nav .nav_links {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 150px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a {
+    text-decoration: none;
+    background-color: #1C1C1C;
+    color: #E31C25;
+    border: solid #1C1C1C;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin-left: 30px;
+    width: 100%;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+a:hover {
+    text-decoration: none;
+    background-color: #E31C25;
+    color: #1C1C1C;
+    transition: all ease 1s;
+    padding: 10px 20px;
+    border-radius: 0px;
+}
+
+.bar {
+    display: block;
+    background-color: white;
+    margin: 10px;
+    height: 3px;
+    width: 40px;
 }
 
 
-/* Buttons */
+/* MID Section  */
+
+.xrow {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    background-color: #1C1C1C;
+    padding-top: 30px;
+}
+
+.name_capital p {
+    text-align: center;
+}
+
+img .picofme {
+    height: 500px;
+}
+
+.row {
+    background-color: #E3E3E3;
+    height: 350px;
+}
+
+
+/* Responsive 400/768/1200/1920  */
+
+@media only screen and (max-width: 768px) {
+    /* Responsive menu  */
+    header {
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        position: fixed;
+    }
+    .logo {
+        margin-left: 50px;
+        height: 80px;
+    }
+    .logo img {
+        margin-top: 25px;
+    }
+    nav {
+        position: absolute;
+        left: -100%;
+        width: 100%;
+        justify-content: center;
+    }
+    nav.active {
+        left: 0;
+        transition: all linear 0.1s;
+    }
+    nav .nav_links {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+        width: 100%;
+    }
+    ul {
+        margin-top: 25px;
+    }
+    ul li {
+        display: flex;
+        width: 100%;
+        margin-top: 25px auto auto auto;
+        text-align: end;
+    }
+    a {
+        margin-left: 0px;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        right: 30px;
+        top: 20px;
+    }
+    .hamburger:hover {
+        background-color: #E31C25;
+        transition: all ease 1s;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+        transition: all ease 1s;
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+        transition: all ease 1s;
+    }
+}
+
+@media only screen and (max-width: 1200px) {}
