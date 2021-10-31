@@ -10,7 +10,6 @@ function mobileMenu() {
 
 console.log(mobileMenu)
 
-
 const navLink = document.querySelectorAll("nav");
 
 navLink.forEach(n => n.addEventListener("click", closeMenu));
