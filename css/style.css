@@ -15,6 +15,20 @@ Font
 
 body {
     margin-top: 80px;
+    min-width: 400px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-font-feature-settings: "liga" on;
+}
+
+h2 {
+    background-color: #E31C25;
+    padding: 1.5% 2.5%;
+    text-align: center;
+}
+
+h2:hover {
+    filter: opacity(0.89);
 }
 
 
@@ -29,6 +43,7 @@ header {
     font-family: 'Roboto', sans-serif;
     position: fixed;
     margin-top: -80px;
+    z-index: 1;
 }
 
 .logo {
@@ -93,6 +108,9 @@ a:hover {
 
 /* MID Section  */
 
+
+/* MID Section - WELCOME  */
+
 .welcome {
     display: flex;
     justify-content: space-between;
@@ -113,8 +131,131 @@ a:hover {
     color: #801b22;
 }
 
+.picofme {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+
+/* MID Section - CARDS*/
+
+.pro {
+    position: relative;
+    z-index: 3;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 60px 0 0 0;
+    padding: 0;
+}
+
+.cards_item {
+    display: flex;
+    padding: 1rem;
+    width: 30%;
+}
+
+.card {
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: auto;
+    margin: 60px 0 0 0;
+}
+
+.card:hover {
+    filter: contrast(100%);
+    cursor: pointer;
+}
+
+.card_content {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.card_image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    filter: contrast(70%);
+    filter: saturate(180%);
+    overflow: hidden;
+    position: relative;
+    transition: 0.5s cubic-bezier(.43, .41, .22, .91);
+    height: 400px;
+    width: 400px;
+}
+
+.card_image::before {
+    content: "";
+    display: block;
+    padding-top: 30px
+}
+
+.card_title {
+    color: #E3E3E3;
+    font-size: 1.25rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.card_text {
+    flex: 1 1 auto;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+}
+
+.card_image_asd {
+    background-image: url("../pics/portfolio/me.jpg");
+}
+
+.btn {
+    background-color: white;
+    border: 1px solid #E3E3E3;
+    border-radius: 1rem;
+    color: #E3E3E3;
+    padding: 0.5rem;
+    text-transform: lowercase;
+}
+
+.btn--block {
+    display: block;
+    width: 100%;
+}
+
+
+/* Footer */
+
+footer {
+    display: flex;
+    height: 100px;
+    background-color: #801b22;
+}
+
+.footer-text p {
+    font-size: 1.2rem;
+    margin: 30px;
+    padding: 10px 15px 15px 10px;
+}
+
 
 /* Responsive 400/768/1200/1920  */
+
+@media only screen and (max-width:400px) {}
 
 @media only screen and (max-width: 768px) {
     /* Responsive menu  */
@@ -126,6 +267,7 @@ a:hover {
         flex-direction: column;
         justify-content: center;
         height: auto;
+        transition: ease 3s;
     }
     .logo {
         margin-left: 50px;
@@ -184,6 +326,29 @@ a:hover {
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
         transition: all ease 1s;
+    }
+    /*Section Mid-WELCOME*/
+    .welcome {
+        padding: 100px 0 30px 0;
+        display: block;
+        height: auto;
+        transition: ease 3s;
+    }
+    .myNameIs {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .picofme {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    /*Section Mid-CARDS*/
+    .cards {
+        display: flex;
+        justify-content: center;
+    }
+    .card_item {
+        width: auto;
     }
 }
 
