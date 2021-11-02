@@ -14,7 +14,7 @@ Font
  */
 
 body {
-    overflow: scroll;
+    margin-top: 80px;
 }
 
 
@@ -27,6 +27,8 @@ header {
     height: 80px;
     width: 100%;
     font-family: 'Roboto', sans-serif;
+    position: fixed;
+    margin-top: -80px;
 }
 
 .logo {
@@ -91,24 +93,24 @@ a:hover {
 
 /* MID Section  */
 
-.myNameIs {}
-
-.webdev {}
-
 .welcome {
     display: flex;
+    justify-content: space-between;
 }
 
-div .nameNyul p {
-    display: flex;
-    justify-content: center;
-    font-family: 'Roboto', sans-serif;
-    color: white;
+.myNameIs {
+    display: inline-block;
+    text-align: center;
+    font-size: 36px;
+    margin: auto;
 }
 
-.picofme {
-    display: flex;
-    justify-content: center;
+.nameNyul {
+    color: #E31C25;
+}
+
+.webdev {
+    color: #801b22;
 }
 
 
