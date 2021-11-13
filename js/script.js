@@ -1,3 +1,5 @@
+/* Navbar*/
+
 const hamburger = document.querySelector(".hamburger");
 const nav = document.querySelector("nav");
 
@@ -18,3 +20,5 @@ function closeMenu() {
     hamburger.classList.remove("active");
     nav.classList.remove("active");
 }
+
+/* Hover Pic Stays*/

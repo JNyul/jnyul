@@ -127,6 +127,20 @@ Font
         justify-content: center;
         margin-bottom: 30px;
     }
+    
+    .photo {
+        filter: opacity(0.2) contrast(30);
+        object-fit: cover;
+        object-position: 0px 400px;
+    }
+    
+    .hover {
+        filter: opacity(1) grayscale(1) contrast(20);
+        object-fit: cover;
+        object-position: 0px 100px;
+        transition: ease 2s;
+        cursor: pointer;
+    }
     /* MID Section - CARDS*/
     /*   
     .pro {
@@ -239,14 +253,15 @@ Font
         justify-content: center;
         text-align: center;
         padding: 20px 30px;
+        margin-top: 2%;
     }
     /* Contact Form  */
     
     .contact-box {
-        margin: 30px 100px;
+        margin: 50px 100px;
         border-radius: 5px;
         background-color: #E3E3E3;
-        padding: 20px;
+        padding: 30px;
     }
     
     .contact {
@@ -414,7 +429,6 @@ Font
             display: flex;
             flex-direction: column;
         }
-        footer {}
     }
     
     @media only screen and (max-width: 1200px) {
