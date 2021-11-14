@@ -125,17 +125,22 @@ Font
     .picofme {
         display: flex;
         justify-content: center;
-        margin-bottom: 30px;
+        margin-bottom: 80px;
     }
     
     .photo {
         filter: opacity(0.2) contrast(30);
         object-fit: cover;
         object-position: 0px 400px;
+        color: #1C1C1C;
     }
     
     .hover {
         filter: opacity(1) grayscale(1) contrast(20);
+        ;
+        transform: scale(1.4) translate(-101px, 0px);
+        -webkit-transform: scale(1.4) translate(-101px, 0px);
+        -moz-transform: scale(1.4) translate(-101px, 0px);
         object-fit: cover;
         object-position: 0px 100px;
         transition: ease 2s;
@@ -329,7 +334,11 @@ Font
     }
     /* Responsive 400/768/1200/1920  */
     
-    @media only screen and (max-width:400px) {}
+    @media only screen and (max-width:400px) {
+        form {
+            min-width: 100%;
+        }
+    }
     
     @media only screen and (max-width: 768px) {
         /* Responsive menu  */
