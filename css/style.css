@@ -432,6 +432,29 @@ Font
             width: 100%;
             margin-bottom: 30px;
         }
+        .photo {
+            filter: opacity(0.2) contrast(30);
+            object-fit: cover;
+            object-position: 0px 400px;
+            filter: opacity(1) grayscale(1) contrast(20);
+            transform: scale(1) translate(-101px, 0px);
+            -webkit-transform: scale(1) translate(-101px, 0px);
+            -moz-transform: scale(1) translate(-101px, 0px);
+            object-fit: cover;
+            object-position: 200px 90px;
+            transition: ease 2s;
+            cursor: pointer;
+        }
+        .hover {
+            filter: opacity(1) grayscale(1) contrast(20);
+            transform: scale(1) translate(-101px, 0px);
+            -webkit-transform: scale(1) translate(-101px, 0px);
+            -moz-transform: scale(1) translate(-101px, 0px);
+            object-fit: cover;
+            object-position: 200px 90px;
+            transition: ease 2s;
+            cursor: pointer;
+        }
         /*Section Mid-CARDS*/
         .cards {
             display: flex;
@@ -453,14 +476,5 @@ Font
             display: flex;
             flex-direction: column;
             padding-top: -100px;
-        }
-        .hover {
-            margin: auto;
-            object-fit: cover;
-            object-position: 200px 150px;
-            filter: opacity(1) grayscale(1) contrast(20);
-            transform: scale(1) translate(-101px, 0px);
-            -webkit-transform: scale(1) translate(-101px, 0px);
-            -moz-transform: scale(1) translate(-101px, 0px);
         }
     }
