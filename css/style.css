@@ -64,6 +64,7 @@ Font
         display: flex;
         justify-content: flex-end;
         margin-right: 150px;
+        list-style: none;
     }
     
     nav ul {
@@ -158,6 +159,9 @@ Font
         flex-wrap: wrap;
         margin: 60px 0 0 0;
         padding: 100px;
+        list-style: none;
+        background-image: url("/pics/bc/6.jpg");
+        background-size: cover;
     }
     
     .cards_item {
@@ -180,6 +184,7 @@ Font
     .card:hover {
         filter: contrast(100%);
         cursor: pointer;
+        box-shadow: #bd2932 -5px 5px, #801b22 -10px 10px, #440e1293 -15px 15px, #460207 -20px 20px, #160405 -25px 25px;
     }
     
     .card_content {
@@ -204,6 +209,8 @@ Font
         width: 400px;
     }
     
+    .card_image:hover {}
+    
     .card_image::before {
         content: "";
         display: block;
@@ -225,7 +232,15 @@ Font
         margin-bottom: 1.25rem;
     }
     
-    .card_image_asd {
+    .card_image_crypto {
+        background-image: url("../pics/portfolio/c.jpg");
+    }
+    
+    .card_image_converter {
+        background-image: url("../pics/portfolio/converterjobb.png");
+    }
+    
+    .card_image_wordpress {
         background-image: url("../pics/portfolio/me.jpg");
     }
     
@@ -242,9 +257,55 @@ Font
         display: block;
         width: 100%;
     }
+    /* Skills  */
+    
+    .skill_box {
+        display: flex;
+        justify-content: space-around;
+        margin: 40px;
+        color: #801b22;
+        font-weight: 900;
+        font-family: 'Roboto', sans-serif;
+        font-size: 25px;
+    }
+    /* .skill::before {
+        content: '';
+    } */
+    
+    div.skills-bc {
+        background-image: url("/pics/bc/2.jpg");
+        background-size: cover;
+    }
+    
+    .skills {
+        background-color: #1C1C1C;
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        border-radius: 10px;
+        margin: 30px;
+        height: 300px;
+        width: 300px;
+        cursor: default;
+    }
+    
+    .skills:hover {
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    }
+    
+    ul.skill_list {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+        padding: 100px;
+    }
+    
+    li.skill_items {
+        list-style: none;
+    }
     /* ABout  */
     
     .about_container {
+        background-color: black;
         display: flex;
         flex-direction: row;
         box-sizing: border-box;
