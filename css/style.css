@@ -137,7 +137,6 @@ Font
     
     .hover {
         filter: opacity(1) grayscale(1) contrast(20);
-        ;
         transform: scale(1.4) translate(-101px, 0px);
         -webkit-transform: scale(1.4) translate(-101px, 0px);
         -moz-transform: scale(1.4) translate(-101px, 0px);
@@ -336,7 +335,8 @@ Font
     
     @media only screen and (max-width:400px) {
         form {
-            min-width: 100%;
+            width: 100%;
+            margin: auto;
         }
     }
     
@@ -453,5 +453,11 @@ Font
             display: flex;
             flex-direction: column;
             padding-top: -100px;
+        }
+        .hover {
+            filter: opacity(1) grayscale(1) contrast(20);
+            transform: scale(1) translate(-101px, 0px);
+            -webkit-transform: scale(1) translate(-101px, 0px);
+            -moz-transform: scale(1) translate(-101px, 0px);
         }
     }
