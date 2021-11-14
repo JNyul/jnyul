@@ -528,6 +528,16 @@ Font
             display: flex;
             flex-direction: column;
         }
+        .skill_box {
+            flex-direction: column;
+        }
+        .skills {
+            align-self: center;
+        }
+        .row {
+            height: auto;
+            width: auto;
+        }
     }
     
     @media only screen and (max-width: 1200px) {
