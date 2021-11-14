@@ -208,8 +208,7 @@ Font
         height: 400px;
         width: 400px;
     }
-    
-    .card_image:hover {}
+    /* .card_image:hover {} */
     
     .card_image::before {
         content: "";
