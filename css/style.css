@@ -455,6 +455,9 @@ Font
             padding-top: -100px;
         }
         .hover {
+            margin: auto;
+            object-fit: cover;
+            object-position: 200px 150px;
             filter: opacity(1) grayscale(1) contrast(20);
             transform: scale(1) translate(-101px, 0px);
             -webkit-transform: scale(1) translate(-101px, 0px);
