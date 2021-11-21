@@ -240,7 +240,7 @@ Font
     }
     
     .card_image_wordpress {
-        background-image: url("../pics/portfolio/me.jpg");
+        background-image: url("../pics/portfolio/jrmassage.jpg");
     }
     
     .btn {
@@ -251,6 +251,8 @@ Font
         padding: 0.5rem;
         text-transform: lowercase;
     }
+
+    
     
     .btn--block {
         display: block;
