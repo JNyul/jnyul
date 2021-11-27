@@ -243,6 +243,14 @@ Font
         background-image: url("../pics/portfolio/jrmassage.jpg");
     }
     
+    .card_image_note_list {
+        background-image: url("../pics/portfolio/notetaker.png");
+    }
+    
+    .card_image_marketplace {
+        background-image: url("../pics/portfolio/marketplace.png");
+    }
+    
     .btn {
         background-color: white;
         border: 1px solid #E3E3E3;
@@ -251,8 +259,6 @@ Font
         padding: 0.5rem;
         text-transform: lowercase;
     }
-
-    
     
     .btn--block {
         display: block;
